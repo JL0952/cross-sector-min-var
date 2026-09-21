@@ -1,0 +1,24 @@
+ticker,company,sector
+AAPL,Apple Inc.,Information Technology
+MSFT,Microsoft Corporation,Information Technology
+JPM,JPMorgan Chase & Co.,Financials
+BAC,Bank of America Corporation,Financials
+JNJ,Johnson & Johnson,Health Care
+UNH,UnitedHealth Group Incorporated,Health Care
+AMZN,Amazon.com Inc.,Consumer Discretionary
+HD,The Home Depot Inc.,Consumer Discretionary
+PG,The Procter & Gamble Company,Consumer Staples
+KO,The Coca-Cola Company,Consumer Staples
+CAT,Caterpillar Inc.,Industrials
+UNP,Union Pacific Corporation,Industrials
+XOM,Exxon Mobil Corporation,Energy
+CVX,Chevron Corporation,Energy
+NEE,NextEra Energy Inc.,Utilities
+DUK,Duke Energy Corporation,Utilities
+AMT,American Tower Corporation,Real Estate
+PLD,Prologis Inc.,Real Estate
+APD,Air Products and Chemicals Inc.,Materials
+NEM,Newmont Corporation,Materials
+GOOGL,Alphabet Inc. Class A,Communication Services
+META,Meta Platforms Inc. Class A,Communication Services
+

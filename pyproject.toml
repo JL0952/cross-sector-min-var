@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cross-sector-min-var"
+version = "0.1.0"
+description = "Cross-sector minimum-variance portfolio research"
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib>=3.7",
+    "numpy>=1.22",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "scikit-learn>=1.4",
+    "scipy>=1.9",
+    "yfinance>=0.2.54",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+prepare-data = "cross_sector_min_var.stage1:main"
+covariance-diagnostics = "cross_sector_min_var.stage2:main"
+build-portfolios = "cross_sector_min_var.stage3:main"
+run-backtest = "cross_sector_min_var.stage4:main"
+analyze-results = "cross_sector_min_var.stage5:main"
+run-robustness = "cross_sector_min_var.stage6:main"
+run-tail-risk = "cross_sector_min_var.stage7:main"
+cross-sector-stage1 = "cross_sector_min_var.stage1:main"
+cross-sector-stage2 = "cross_sector_min_var.stage2:main"
+cross-sector-stage3 = "cross_sector_min_var.stage3:main"
+cross-sector-stage4 = "cross_sector_min_var.stage4:main"
+cross-sector-stage5 = "cross_sector_min_var.stage5:main"
+cross-sector-stage6 = "cross_sector_min_var.stage6:main"
+cross-sector-stage7 = "cross_sector_min_var.stage7:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
